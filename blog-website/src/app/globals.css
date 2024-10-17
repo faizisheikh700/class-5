@@ -1,0 +1,213 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 45px 5px 20px;
+  background-color: #512803;
+  color: #D5BF86;
+  width: 100vw;
+  box-shadow: 0px 5px 14px;
+  
+  
+}
+
+.navbar{
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.head{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 70px;
+  padding: 15px;
+  padding-right: 35px;
+}
+
+.head li:hover{
+  text-decoration: underline;
+
+}
+.navbar .companyLogo .logoName{
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: uppercase;
+  
+}
+.companyLogo{
+  display: flex;
+  align-items: end;
+}
+/* .companyLogo h6{
+  } */
+  
+  .slogan{
+  font-size: 0.6rem;
+}
+
+/* .hum{ */
+  /* display: none; */
+  /* position: absolute;
+  right: inherit;
+  
+} */
+
+
+.navbar ul li{
+  font-size: 1.2rem;
+}
+
+
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  /* margin: auto; */
+  background-color: rgb(233, 231, 227);
+  height: 504px;
+}
+
+
+div img{
+   width: 100%;
+  height: 480px; 
+  /* background-size: contain; */
+  /* background-repeat: no-repeat; */
+  animation: Bagmage 2s infinite ease-in-out 5s;
+}
+
+@keyframes Bagmage {
+  from  { background-image: url(https://t4.ftcdn.net/jpg/02/67/85/85/360_F_267858509_s29kX2RwLabLveFb6HrMI2fooXFlTMSC.jpg);}
+  to   {background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO8AAxAr9ZNr9JCwn2QZ35rSWWuiayhh0ayQ&s);}
+}
+
+
+
+.centerText{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+.centerText h3{
+  font-size: 2.5rem;
+}
+
+.centerText h1{
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.centerText p{
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+
+.blogCards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+.card{
+  border: 1px solid #512803;
+  border-radius: 5px;
+}
+
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #512803;
+  color: #D5BF86;
+  margin-top: 30px;
+  gap: 20rem;
+  padding: 2rem;
+}
+
+div hr{
+  width: 70%;
+  margin: auto;
+}
+
+
+
+/* -------------------------RESPONSIVENESS-------------------------- */
+
+@media only screen and (max-width: 768px) {
+  .navbar{
+    width: fit-content;
+  }  
+  .head li{
+      display: none;
+    }
+    .navbar .companyLogo .logoName{
+      font-size: 20px;
+      /* color: white; */
+      width: 90vw;
+    }
+    /* .navbar .companyLogo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    } */
+
+    /* .hum{
+      display: block;
+            font-size: 25px;
+      
+
+    } */
+
+    div img{
+      height: 380px;
+    }
+
+    .centerText{
+      position: absolute;
+      top: 30%;
+    }
+
+    .centerText h3{
+      font-size: 1.5rem;
+    }
+    
+    .centerText h1{
+      font-size: 1rem;
+    }
+    
+    .centerText p{
+      font-size: 0.9rem;
+      width: 100vw;
+    }
+    
+    .blogCards{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footer{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: start;
+    }
+    .rit{
+      font-size: 0.7rem;
+    }
+
+}
