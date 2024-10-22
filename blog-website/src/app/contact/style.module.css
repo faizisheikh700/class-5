@@ -1,0 +1,60 @@
+.mainTag{
+    width: 60vw;
+    /* height: 70vh; */
+    background: #D5BF86;
+    padding: 30px;
+    margin: auto;
+    margin-top: 5rem;
+    border-radius: 2rem;
+    
+}
+
+.mainTag h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #512803;
+}
+
+.formContent{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+}
+
+.formContent input{
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+}
+
+.message{
+    padding: 0.6rem;
+    /* padding-top: 0; */
+    /* line-height: 5rem; */
+    position: relative;
+    top: 1rem;
+    border-radius: 0.5rem;
+}
+
+
+.subBtn{
+    background: #512803;
+    color: #D5BF86;
+    padding: 0.4rem;
+    width: 5rem;
+    border-radius: 0.5rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+.mainTag{
+    width: 90vw;
+    /* height: 70vh; */
+    /* padding: 20px; */
+}
+.mainTag h1{
+    font-size: 1.5rem;
+    text-align: center  ;
+}
+}
