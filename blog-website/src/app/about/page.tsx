@@ -1,6 +1,7 @@
 import Style from "@/app/about/style.module.css";
-import Link from "next/link";
-import Education from "../education/page";
+// import Link from "next/link";
+// import Education from "./education/page";
+import ProfileBar from "@/components/Edulink";
 export default function About() {
   return (
     <>
@@ -47,25 +48,11 @@ export default function About() {
           </div>
         </div>
         <div className={Style.dataContent}>
-          <ul>
-            <Link
-              href={""}>
-              <li>Education</li>
-            </Link>
-            <Link href={"../about/education"}>
-              <li>Experience</li>
-            </Link>
-            <Link href={" "}>
-              <li>Other Certification</li>
-            </Link>
-            <Link href={" "}>
-              <li>Hobbies</li>
-
-            </Link>
-          </ul>
+         
+        <ProfileBar/>
         </div>
-        <Education/>
       </div>
+        {/* <Education/> */}
     </>
   );
 }
