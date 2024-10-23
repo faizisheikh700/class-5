@@ -76,17 +76,18 @@ div button .hum{
 }
 
 
-div img{
+div .mainImage {
    width: 100%;
   height: 480px; 
-  /* background-size: contain; */
-  /* background-repeat: no-repeat; */
+  background-size: contain;
+  background-repeat: no-repeat;
   animation: Bagmage 2s infinite ease-in-out 5s;
+  background: red;
 }
 
 @keyframes Bagmage {
-  from  { background-image: url(https://t4.ftcdn.net/jpg/02/67/85/85/360_F_267858509_s29kX2RwLabLveFb6HrMI2fooXFlTMSC.jpg);}
-  to   {background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO8AAxAr9ZNr9JCwn2QZ35rSWWuiayhh0ayQ&s);}
+  from  { background-image: url(https://wordsrated.com/wp-content/uploads/2022/02/Number-of-Books-Published-Per-Year.jpg);}
+  to   {background-image: url(https://images.theconversation.com/files/45159/original/rptgtpxd-1396254731.jpg?ixlib=rb-4.1.0&q=45&auto=format&w=1356&h=668&fit=crop);}
 }
 
 
