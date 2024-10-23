@@ -1,13 +1,10 @@
 import style from "./Sidemanu.module.css";
 import Link from "next/link";
 import { RxCross1 } from "react-icons/rx";
-export default function Sidemanu({ onShow, showSideBar }) {
+export default function Sidemanu({ onShow, showSideBar }:any) {
   return (
     <div
-      className={`${style.container} ${
-        !showSideBar ? style.barOut : style.barIn
-      }`}
-    >
+      className={`${style.container} ${ !showSideBar ? style.barOut : style.barIn}`}>
       <nav className={style.linkBox}>
         <div className={style.iconBox}>
           <button onClick={onShow}>
